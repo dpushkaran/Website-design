@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Name</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a><!--Logo img Here-->
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="template.html">Link 1</a></li>
+                    <li><a href="about-template.html">Link 2</a></li>
+                    <li><a href="link3-template.html">Link 3</a></li>
+                    <li><a href="link4-template.html">Link 4</a></li>
+                    <li><a href="contact-template.html">Link 5</a></li>
+                    <li><a href="reviews-template.html">Link 6</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+   <!-- Contact Us -->
+   <section class="location">
+        <!-- Insert Map here -->
+   </section>
+
+   <section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fas fa-home"></i>
+                <span>
+                    <h5>Address Here</h5>
+                    <p>City, State, Country</p>
+                </span>
+            </div>
+            <div>
+                <i class="fas fa-phone-alt"></i>
+                <span>
+                    <h5>Phone Number Here</h5>
+                    <p>Hours to call Here</p>
+                </span>
+            </div>
+            <div>
+                <i class="far fa-envelope"></i>
+                <span>
+                    <h5>Email Address here</h5>
+                    <p>Email Us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler-template.php" method="post">
+                <input type="text" name="name" placeholder="Enter your Name" required>
+                <input type="text" name="address" placeholder="Enter your address" required>
+                <input type="tel" name="tel" placeholder="Enter your phone number" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <textarea rows="8" name="message" placeholder="How many boxes and items"></textarea>
+                <button type="submit" class=" btn red-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+   </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>Header</h4>
+        <p>Some text here</p>
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i> 
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made by Deva Pushkaran</p>
+    </section>
+
+    <!-- JavaScript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

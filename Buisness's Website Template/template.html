@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Name</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <!-- Section One: nav -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a><!--Logo img Here-->
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="template.html">Link 1</a></li>
+                    <li><a href="about-template.html">Link 2</a></li>
+                    <li><a href="link3-template.html">Link 3</a></li>
+                    <li><a href="link4-template.html">Link 4</a></li>
+                    <li><a href="contact-template.html">Link 5</a></li>
+                    <li><a href="reviews-template.html">Link 6</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <!-- Section 2: Front Page-->
+        <div class="text-box">
+            <h1>Business Name Here</h1>
+            <p>Short description here</p>
+            <a href="" class="btn">btn content</a>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="link2">
+        <h2>Heading</h2>
+        <p>Some text</p>
+
+        <div class="row">
+           <div class="col-1">
+               <h3>heading 1</h3>
+               <p>Some text here</p>
+           </div> 
+           <div class="col-1">
+                <h3>heading 2</h3>
+                <p>Some text here</p>
+            </div>
+            <div class="col-1">
+                <h3>heading 3</h3>
+                <p>Some text here</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section 4 -->
+
+    <section class="link3">
+        <h1>Heading</h1>
+        <p>Some text here</p>
+
+        <div class="row">
+            <div class="col-2">
+                <img src="images/london.png"><!-- 1st img here -->
+                <div class="layer">
+                    <h3>some text here</h3>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="images/newyork.png"><!-- 2nd img here -->
+                <div class="layer">
+                    <h3>some text here</h3>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="images/washington.png"><!-- 3rd img here -->
+                <div class="layer">
+                    <h3>some text here</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section 5 -->
+
+    <section class="link4">
+        <h1>Heading</h1>
+        <p>Some text here</p>
+
+        <div class="row">
+            <div class="col-3">
+                <img src="images/library.png">
+                <h3>Heading</h3>
+                <p>some text here</p>
+            </div>
+            <div class="col-3">
+                <img src="images/basketball.png">
+                <h3>Heading</h3>
+                <p>some text here</p>
+            </div>
+            <div class="col-3">
+                <img src="images/cafeteria.png">
+                <h3>Heading</h3>
+                <p>some text here</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6 -->
+
+    <section class="link5">
+        <h1>Heading</h1>
+        <p>Some text here</p>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/user1.jpg">
+                <div>
+                    <p>Review Here</p>
+                    <h3>User's name here</h3>
+                    <i class="fas fa-star"></i><!-- One Star Review-->
+                    <i class="fas fa-star"></i><!-- Two Star Review-->
+                    <i class="fas fa-star"></i><!-- Three Star Review-->
+                    <i class="fas fa-star"></i><!-- Four Star Review-->
+                    <i class="fas fa-star"></i><!-- Five Star Review-->
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="images/user2.jpg">
+                <div>
+                    <p>Review Here</p>
+                    <h3>User's name here</h3>
+                    <i class="fas fa-star"></i><!-- One Star Review-->
+                    <i class="fas fa-star"></i><!-- Two Star Review-->
+                    <i class="fas fa-star"></i><!-- Three Star Review-->
+                    <i class="fas fa-star"></i><!-- Four Star Review-->
+                    <i class="fas fa-star"></i><!-- Five Star Review-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section 7 -->
+
+    <section class="link6">
+        <h1>Heading</h1>
+        <a href="" class="btn">btn content</a>
+
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>Header</h4>
+        <p>Some text here</p>
+        <div class="icons">
+            <i class="fab fa-facebook-square"></i> 
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made by Deva Pushkaran</p>
+    </section>
+
+
+    <!-- JavaScript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
